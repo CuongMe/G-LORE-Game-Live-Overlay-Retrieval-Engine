@@ -13,6 +13,7 @@ Players often have to research how to play a game by reading wikis, watching You
 The product should let a player get help without leaving the game. The player opens an overlay, asks a question, and receives a concise answer with links to the sources behind it. If the player chooses to share a screen region, G-Lore can use that context as well. The first release should prove this workflow for one game before expanding to more games or more automatic game-state understanding.
 
 ## UI/UX designs
+
 The following pain points define the UI/UX work for G-Lore. Each one maps to technical requirements that can be tested during implementation.
 
 ### Player pain points
@@ -66,5 +67,3 @@ The following pain points define the UI/UX work for G-Lore. Each one maps to tec
 | Primary requirements | Secondary requirements |
 |---|---|
 | **Game profile:** Game-specific configuration shall be represented through a stable game profile containing detection rules, supported versions, and approved sources.<br><br>**Support check:** The system shall identify whether the active game is supported before sending a game-specific request.<br><br>**Capability messages:** Unsupported games, unsupported versions, and missing source coverage shall produce clear capability messages.<br><br>**Evidence boundary:** The answer service shall not present information as game-specific when it cannot trace the information to approved evidence. | **Configuration-based expansion:** Adding a supported game shall require configuration and knowledge-source changes without rewriting the core overlay flow.<br><br>**Visible capability:** The UI shall show the detected game, supported version, and available context capabilities.<br><br>**Manual correction:** The player shall be able to correct or clear an incorrect game selection.<br><br>**Coverage distinction:** The system shall distinguish between a lack of game-state context and a lack of knowledge-base coverage. |
-#   G - L o r e - G a m e - L i v e - O v e r l a y - R e t r i e v a l - E n g i n e  
- 
